@@ -1,5 +1,5 @@
 import * as NextImage from 'next/image';
-import '../styles/globals.css';
+import '../pages/globals.css';
 
 const BREAKPOINTS_INT = {
   xs: 375,
@@ -42,4 +42,8 @@ export const parameters = {
     },
   },
   viewport: { viewports: customViewports },
+  layout: 'fullscreen',
+  nextRouter: {
+    Provider: RouterContext.Provider,
+  },
 };
